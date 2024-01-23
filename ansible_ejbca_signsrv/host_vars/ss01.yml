@@ -1,6 +1,6 @@
 ---
 
-hostname: ss01.solitude.skyrim
+hostname: 172.16.142.133
 
 # Dirty mapping of httpd cert file name till something better is used 
 httpd_identity_info:

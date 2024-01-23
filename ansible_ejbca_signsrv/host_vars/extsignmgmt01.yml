@@ -1,6 +1,6 @@
 ---
 
-hostname: caextsig01.solitude.skyrim
+hostname: 172.16.142.133
 
 # Initialize a CA using configdump instead of the CLI. This works for CA's that are not being signed by
 # an external CA. When using this option a crypto token is created in EJBCA, and then the CA is imported

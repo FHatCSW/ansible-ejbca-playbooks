@@ -1,6 +1,6 @@
 ---
 
-hostname: ce01.solitude.skyrim
+hostname: 172.16.142.133
 
 # Dirty hack to tell the type of instance till something better is used
 #ejbca_type: CA
