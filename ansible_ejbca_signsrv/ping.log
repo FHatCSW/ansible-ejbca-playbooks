@@ -1,0 +1,58 @@
+ansible -i inventory -m ping all
+
+
+PLAY [Ansible Ad-Hoc] ***********************************************************************************************************************************************************************************************
+[WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/host_vars/extsignmgmt01.yml, line 3, column 1, found a duplicate dict key
+(httpd_identity_info). Using last defined value only.
+[WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/group_vars/eeSignServers.yml, line 4, column 1, found a duplicate dict key
+(databaseprotection_enablesign_AuditRecordData). Using last defined value only.
+[WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/group_vars/eeSignServers.yml, line 4, column 1, found a duplicate dict key
+(databaseprotection_enableverify_AuditRecordData). Using last defined value only.
+
+TASK [ping] *********************************************************************************************************************************************************************************************************
+ok: [172.16.142.133]
+ok: [rt01]
+ok: [extsignmgmt01]
+ok: [ca02]
+ok: [ca01]
+ok: [extsignpolca01]
+ok: [polcasignissueca]
+ok: [extroot01]
+ok: [subca01]
+ok: [ra01]
+ok: [va01]
+ok: [ss01]
+ok: [cess01]
+ok: [webrepo.solitude.skyrim]
+ok: [ce01]
+ok: [docker02.solitude.skyrim]
+ok: [pkiTlsEnrollmentCA]
+ok: [pkiCsrEnrollmentCa]
+ok: [ssTlsEnrollmentCa]
+ok: [ssCsrEnrollmentCa]
+fatal: [peerca01]: UNREACHABLE! => changed=false
+  msg: 'Failed to connect to the host via ssh: ssh: connect to host 172.16.170.178 port 22: Operation timed out'
+  unreachable: true
+
+PLAY RECAP **********************************************************************************************************************************************************************************************************
+172.16.142.133             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ca01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ca02                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ce01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+cess01                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+docker02.solitude.skyrim   : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+extroot01                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+extsignmgmt01              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+extsignpolca01             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+peerca01                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0
+pkiCsrEnrollmentCa         : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+pkiTlsEnrollmentCA         : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+polcasignissueca           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ra01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+rt01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ss01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ssCsrEnrollmentCa          : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+ssTlsEnrollmentCa          : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+subca01                    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+va01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+webrepo.solitude.skyrim    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0

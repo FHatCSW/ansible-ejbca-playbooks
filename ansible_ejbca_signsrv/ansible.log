@@ -5149,3 +5149,59 @@ Shared connection to 172.16.142.133 closed.
   msg: Timeout when waiting for file /opt/wildfly/standalone/deployments/ejbca.ear.isdeploying
 2024-01-23 13:26:13,359 p=63726 u=florianhandke n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
 2024-01-23 13:26:13,359 p=63726 u=florianhandke n=ansible | ce01                       : ok=51   changed=1    unreachable=0    failed=1    skipped=92   rescued=0    ignored=0   
+2024-01-23 13:29:49,898 p=65481 u=florianhandke n=ansible | PLAY [Ansible Ad-Hoc] ***********************************************************************************************************************************************************************************************
+2024-01-23 13:29:50,022 p=65481 u=florianhandke n=ansible | [WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/host_vars/extsignmgmt01.yml, line 3, column 1, found a duplicate dict key
+(httpd_identity_info). Using last defined value only.
+
+2024-01-23 13:29:50,067 p=65481 u=florianhandke n=ansible | [WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/group_vars/eeSignServers.yml, line 4, column 1, found a duplicate dict key
+(databaseprotection_enablesign_AuditRecordData). Using last defined value only.
+
+2024-01-23 13:29:50,068 p=65481 u=florianhandke n=ansible | [WARNING]: While constructing a mapping from /Users/florianhandke/PycharmProjects/ansible-ejbca-playbooks/ansible_ejbca_signsrv/group_vars/eeSignServers.yml, line 4, column 1, found a duplicate dict key
+(databaseprotection_enableverify_AuditRecordData). Using last defined value only.
+
+2024-01-23 13:29:50,120 p=65481 u=florianhandke n=ansible | TASK [ping] *********************************************************************************************************************************************************************************************************
+2024-01-23 13:29:53,641 p=65481 u=florianhandke n=ansible | ok: [172.16.142.133]
+2024-01-23 13:29:55,046 p=65481 u=florianhandke n=ansible | ok: [rt01]
+2024-01-23 13:29:55,724 p=65481 u=florianhandke n=ansible | ok: [extsignmgmt01]
+2024-01-23 13:29:55,767 p=65481 u=florianhandke n=ansible | ok: [ca02]
+2024-01-23 13:29:55,796 p=65481 u=florianhandke n=ansible | ok: [ca01]
+2024-01-23 13:29:56,534 p=65481 u=florianhandke n=ansible | ok: [extsignpolca01]
+2024-01-23 13:29:57,644 p=65481 u=florianhandke n=ansible | ok: [polcasignissueca]
+2024-01-23 13:29:58,246 p=65481 u=florianhandke n=ansible | ok: [extroot01]
+2024-01-23 13:29:58,267 p=65481 u=florianhandke n=ansible | ok: [subca01]
+2024-01-23 13:29:58,994 p=65481 u=florianhandke n=ansible | ok: [ra01]
+2024-01-23 13:29:59,886 p=65481 u=florianhandke n=ansible | ok: [va01]
+2024-01-23 13:30:00,522 p=65481 u=florianhandke n=ansible | ok: [ss01]
+2024-01-23 13:30:00,551 p=65481 u=florianhandke n=ansible | ok: [cess01]
+2024-01-23 13:30:01,267 p=65481 u=florianhandke n=ansible | ok: [webrepo.solitude.skyrim]
+2024-01-23 13:30:02,191 p=65481 u=florianhandke n=ansible | ok: [ce01]
+2024-01-23 13:30:03,109 p=65481 u=florianhandke n=ansible | ok: [docker02.solitude.skyrim]
+2024-01-23 13:30:03,180 p=65481 u=florianhandke n=ansible | ok: [pkiTlsEnrollmentCA]
+2024-01-23 13:30:03,776 p=65481 u=florianhandke n=ansible | ok: [pkiCsrEnrollmentCa]
+2024-01-23 13:30:04,386 p=65481 u=florianhandke n=ansible | ok: [ssTlsEnrollmentCa]
+2024-01-23 13:30:04,609 p=65481 u=florianhandke n=ansible | ok: [ssCsrEnrollmentCa]
+2024-01-23 13:30:05,780 p=65481 u=florianhandke n=ansible | fatal: [peerca01]: UNREACHABLE! => changed=false 
+  msg: 'Failed to connect to the host via ssh: ssh: connect to host 172.16.170.178 port 22: Operation timed out'
+  unreachable: true
+2024-01-23 13:30:05,889 p=65481 u=florianhandke n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2024-01-23 13:30:05,889 p=65481 u=florianhandke n=ansible | 172.16.142.133             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,889 p=65481 u=florianhandke n=ansible | ca01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,889 p=65481 u=florianhandke n=ansible | ca02                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,890 p=65481 u=florianhandke n=ansible | ce01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,890 p=65481 u=florianhandke n=ansible | cess01                     : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,890 p=65481 u=florianhandke n=ansible | docker02.solitude.skyrim   : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,890 p=65481 u=florianhandke n=ansible | extroot01                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | extsignmgmt01              : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | extsignpolca01             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | peerca01                   : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | pkiCsrEnrollmentCa         : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | pkiTlsEnrollmentCA         : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | polcasignissueca           : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,899 p=65481 u=florianhandke n=ansible | ra01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,900 p=65481 u=florianhandke n=ansible | rt01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,900 p=65481 u=florianhandke n=ansible | ss01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,900 p=65481 u=florianhandke n=ansible | ssCsrEnrollmentCa          : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,900 p=65481 u=florianhandke n=ansible | ssTlsEnrollmentCa          : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,901 p=65481 u=florianhandke n=ansible | subca01                    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,901 p=65481 u=florianhandke n=ansible | va01                       : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-01-23 13:30:05,901 p=65481 u=florianhandke n=ansible | webrepo.solitude.skyrim    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
